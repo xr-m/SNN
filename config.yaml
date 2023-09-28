@@ -1,0 +1,76 @@
+deapA:
+  data_name: DEAP_A
+  sample_path: F:/dataset/DEAP_DE/
+  sub_file_name: 'person_%d data.npy'
+  elabels_file_name: 'person_%d label_A.npy'
+  output_path: ./Results/SNN/DEAP_A/
+  log_path: ./logs/log_SNN_DEAP_A.txt
+  file_mode: w
+  cuda: 0
+  num_subs: 32
+  exp_times: 1
+  in_channels: 32
+  n_classes: 2
+
+  lr: 0.001
+  n_epochs: 30
+  batchsize: 16
+  length: 100
+  tau_m: 4
+  train_coefficients: True
+  train_bias: True
+  membrane_filter: False
+  dim_1: 480
+  dim_2: 300
+
+
+deapV:
+  data_name: DEAP_V
+  sample_path: F:/dataset/DEAP_DE/
+  sub_file_name: 'person_%d data.npy'
+  elabels_file_name: 'person_%d label_V.npy'
+  output_path: ./Results/SNN/DEAP_V/
+  log_path: ./logs/log_SNN_DEAP_V.txt
+  file_mode: w
+  cuda: 0
+  num_subs: 32
+  exp_times: 1
+  in_channels: 32
+  n_classes: 2
+
+  lr: 0.001
+  n_epochs: 50
+  batchsize: 16
+  length: 25
+  tau_m: 4
+  train_coefficients: True
+  train_bias: True
+  membrane_filter: False
+  dim_1: 480
+  dim_2: 300
+
+
+seed:
+  data_name: SEED
+  sample_path: F:/dataset/SEED/DE_4D/
+  sub_file_name: 'person_%d data.npy'
+  elabels_file_name: 'label.npy'
+  output_path: ./Results/SNN/SEED/
+  log_path: ./logs/log_SNN_SEED.txt
+  file_mode: w
+  cuda: 0
+  num_subs: 15
+  exp_times: 1
+  in_channels: 62
+  n_classes: 3
+
+  lr: 0.001
+  n_epochs: 20
+  batchsize: 16
+  length: 25
+  tau_m: 4
+  train_coefficients: True
+  train_bias: True
+  membrane_filter: False
+  dim_1: 900
+  dim_2: 500
